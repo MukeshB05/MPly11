@@ -654,9 +654,7 @@ ul.nobullets {
                         <h3 class="font-medium truncate text-sm">${track.name}</h3>
                         <p class="text-xs text-gray-400 truncate">${track.primaryArtists}</p>
                         <p class="text-xs text-gray-500 mt-1">${track.year} • ${formatDuration(track.duration)}</p>
-                         <button class="focus:outline-none pr-4 group">
-          <svg class="w-4 h-4 group-hover:text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5" onclick='AddDownload("${song_id}")'/></svg>
-        </button>
+                        <button class="btn btn-primary song-btn" type="button" style="margin:0px 2px;color:#fff" onclick='AddDownload("${song_id}")'>DL</button>
                     </div>
                 </div>
             `;
